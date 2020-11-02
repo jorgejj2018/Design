@@ -14,7 +14,7 @@ box-shadow: 30px 30px 4px rgba(0, 0, 0, 0.2);
 border-radius: 20px;
 display:flex;
 justify-content:space-evenly;
-border:dotted px;
+border:dotted 3px;
 }
 
 .container-profile .ctn-left{
@@ -43,12 +43,17 @@ border:dotted px;
 	align-items:center;
 	box-shadow: 10px 10px 5px #0001;
 }
+.ctn-menu button{
+	cursor: pointer;
+	border-style:none;
+}
 
  .ctn-menu .container-icono1,
  		   .container-icono4{
  	width:90%;
  	height:8.5vh;
  	text-align:center;
+
 
  }
   .ctn-menu .container-icono2,
@@ -162,6 +167,14 @@ border:dotted px;
 .btn-save h4 {
 	color:#222;
 }
+.btn-save:hover {
+	background-color:whitesmoke;
+	cursor: pointer;
+	border:solid 2px #ADADD0;
+}
+.btn-save h4:hover {
+	color:#223;
+}
 .ctn-btn .btn-cancel{
 	background-color:#223;
 	width:30%;
@@ -172,6 +185,15 @@ border:dotted px;
 
 .btn-cancel h4 {
 	color:whitesmoke;
+}
+
+.btn-cancel:hover {
+	background-color:whitesmoke;
+	cursor: pointer;
+	border:solid 2px;
+}
+.btn-cancel h4:hover {
+	color:#223;
 }
 
 
@@ -194,12 +216,21 @@ border:dotted px;
 	border-radius:5px;
 
 }
-.ctn-photos img{
+.ctn-photos a {
 	width:30%;
+	margin-top:2%;
+	border-radius:5px;
+	border-style:none;
+	cursor:pointer;
+	list-style:none;
+}
+.ctn-photos a img{
+	width:80%;
 	height:6vh;
 	margin-top:2%;
 	border-radius:5px;
-
+	border-style:none;
+	cursor:pointer;
 }
 
 .ctn-search{
