@@ -5,16 +5,22 @@
 body{
 	background-color:#0001;
 }
+h3{
+	color:whitesmoke;
+	font-family: Roboto;
+	font-style: italic;
+	color:gray;
+	text-align: center;
+}
 .container-profile{
 width: 80%;
 height: 80vh;
-margin:10%; auto;
+margin:5% auto;
 background: #F5F5F5;
-box-shadow: 30px 30px 4px rgba(0, 0, 0, 0.2);
+box-shadow: 30px 30px 25px rgba(0, 0, 0, 0.2);
 border-radius: 20px;
 display:flex;
 justify-content:space-evenly;
-border:dotted 3px;
 }
 
 .container-profile .ctn-left{
@@ -33,6 +39,13 @@ border:dotted 3px;
 	width:40%;
 	height:15vh;
 	border-radius:50%;
+	border:solid 2px #222;
+}
+
+.ctn-left .ctn-profile:hover{
+	transform:scale(.8);
+	border:solid 2px #222;
+	cursor:pointer;
 }
 .ctn-left .ctn-menu{
 	width:80%;
@@ -48,16 +61,16 @@ border:dotted 3px;
 	border-style:none;
 }
 
- .ctn-menu .container-icono1,
- 		   .container-icono4{
+ .ctn-menu .ctn-icono1,
+ 		   .ctn-icono4{
  	width:90%;
  	height:8.5vh;
  	text-align:center;
 
 
  }
-  .ctn-menu .container-icono2,
-  			.container-icono3{
+  .ctn-menu .ctn-icono2,
+  			.ctn-icono3{
  	width:90%;
  	height:8.5vh;
  	align-items: baseline;
@@ -88,14 +101,14 @@ border:dotted 3px;
 
 .ctn-center .ctn-form{
 	background: #F5F5F5;
-	width:90%;
+	width:95%;
 	height:65vh;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
 	opacity: 0.7;
 	border: 10px none #222222;
-	box-shadow: 8px 8px 15px #111; 
+	box-shadow: 2px 2px 15px #0001; 
 
 }
 
@@ -251,3 +264,63 @@ border:dotted 3px;
 	border-radius: 5px;
 	border-style: none;
 }
+
+/* Container line*/
+.container-line{
+width: 80%;
+height: 11.8vh;
+margin:-6.8% 9.9%;
+}
+/* Container Story*/
+
+.container-story{
+width: 79.9%;
+height: 20vh;
+margin:-7.2% 10%;
+background: #F5F5F5;
+box-shadow: 30px 30px 25px rgba(0, 0, 0, 0.2);
+border-radius: 1px;
+display:flex;
+justify-content:space-evenly;
+align-items:center;
+}
+.container-story .ctn-imgStory{
+background-color:gray;
+width:10%;
+height:11vh;
+border-radius:50%;
+cursor:pointer;
+
+}
+
+.container-story .ctn-imgStory img{
+	background-color:gray;
+	width:100%;
+	height:11vh;
+	border-radius:50%;
+	border:solid 2px #001;
+	background-size:contain;
+
+}
+
+.ctn-imgStory:hover,
+.ctn-imgStory img:hover{
+	transform:scale(1.1);
+	border:solid 2px tomato;
+}
+
+
+.container-story button{
+width:10%;
+height:10vh;
+border-radius:50%;
+border-style:none;
+opacity:0.4;
+cursor:pointer;
+
+}
+
+.container-story button{
+font-size:25px;
+}
+
